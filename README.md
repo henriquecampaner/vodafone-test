@@ -24,11 +24,11 @@ This project was developed with the following technologies:
 -  [Immer](https://github.com/immerjs/immer)
     (allows you to work with immutable state in a more convenient way)
 -  [React-Toastify](https://fkhadra.github.io/react-toastify/)
-  (view the application state and show API requests & responses
 
 -  [React-Icons](http://react-icons.github.io/react-icons/)
 
 -  [Reactotron](https://infinite.red/reactotron)
+  (view the application state and show API requests & responses
 
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
