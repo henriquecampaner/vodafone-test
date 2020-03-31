@@ -10,15 +10,26 @@ Page which shows all business cards of users with search functionality
 This project was developed with the following technologies:
 
 -  [ReactJS](https://reactjs.org/)
+
 -  [Create React App Configuration Override](https://github.com/sharegate/craco)
+
 -  [Redux](https://redux.js.org/)
+
 -  [Redux-Saga](https://redux-saga.js.org/)
+
 -  [styled-components](https://www.styled-components.com/)
+
 -  [Axios](https://github.com/axios/axios)
+
 -  [Immer](https://github.com/immerjs/immer)
+    (allows you to work with immutable state in a more convenient way)
 -  [React-Toastify](https://fkhadra.github.io/react-toastify/)
+  (view the application state and show API requests & responses
+
 -  [React-Icons](http://react-icons.github.io/react-icons/)
+
 -  [Reactotron](https://infinite.red/reactotron)
+
 -  [VS Code][vc] with [EditorConfig][vceditconfig] and [ESLint][vceslint]
 
 
