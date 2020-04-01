@@ -28,6 +28,7 @@
     "eject": "react-scripts eject"
   },
   "jest": {
+    "setupFiles": ["@testing-library/react/dont-cleanup-after-each"],
     "testMatch": [
       "**/__tests__/**/*.test.js"
     ],

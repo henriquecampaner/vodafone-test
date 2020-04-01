@@ -13,24 +13,24 @@ import Cards from '../../components/Cards';
 export default function Main() {
   const dispatch = useDispatch();
   const { loading } = useSelector((state) => state.cards);
-  const [re, setre] = useState([]);
+  const [cards, setcards] = useState([]);
   const [search, setSearch] = useState('');
 
   useMemo(() => {
     dispatch(loadCardsRequest());
   }, []);
 
-  const { cards } = useSelector((state) => state.cards);
+  const { cards: data } = useSelector((state) => state.cards);
 
   useEffect(() => {
-    setre(cards);
+    setcards(data);
   }, [cards, search]);
 
   function handleSearch(e) {
     e.preventDefault();
 
-    setre(
-      re.filter((card) => {
+    setcards(
+      cards.filter((card) => {
         return card.username.toLowerCase().includes(search.toLocaleLowerCase());
       })
     );
@@ -55,7 +55,7 @@ export default function Main() {
         </form>
         {!loading ? (
           <ul>
-            {re.map((card) => (
+            {cards.map((card) => (
               <Cards card={card} key={card.id} />
             ))}
           </ul>
