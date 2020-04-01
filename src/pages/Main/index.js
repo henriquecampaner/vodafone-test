@@ -24,7 +24,7 @@ export default function Main() {
 
   useEffect(() => {
     setcards(data);
-  }, [cards, search]);
+  }, [data, search]);
 
   function handleSearch(e) {
     e.preventDefault();
@@ -35,6 +35,8 @@ export default function Main() {
       })
     );
   }
+
+  console.log(cards);
 
   return (
     <Container>
